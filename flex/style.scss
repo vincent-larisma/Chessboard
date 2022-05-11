@@ -1,5 +1,6 @@
 $item-size: 3.75rem;
 $container-size: 30rem;
+$chess-size: 2rem;
 
 * {
     padding: 0px;
@@ -23,41 +24,48 @@ $container-size: 30rem;
     justify-content: center;
     width: $container-size;
     height:$container-size;
-    box-shadow: 0 0 5px;
+    box-shadow: 0 0 3px;
+
     
     
 
-    .item{
+    .dark-block{
         background-color: rgb(36, 36, 173);
         width: $item-size;
         height: $item-size;
+        font-size: $chess-size;
+        text-align: center;
     }
 
     .light-block{
         background-color: rgb(201, 201, 250);
         width: $item-size;
         height: $item-size;
+        font-size: $chess-size;
+        text-align: center;
     }
 }
+
 
 @media (max-width: 481px) {
     $item-size: 2.5rem;
     $container-size: 20rem;
+    $chess-size: 1rem;
 
     .container{
         width: $container-size;
         height:$container-size;
 
-        .item{
-            background-color: rgb(36, 36, 173);
+        .dark-block{
             width: $item-size;
             height: $item-size;
+            font-size: $chess-size;
         }
 
         .light-block{
-            background-color: rgb(201, 201, 250);
             width: $item-size;
             height: $item-size;
+            font-size: $chess-size;
         }
     }
 }
@@ -65,21 +73,22 @@ $container-size: 30rem;
 @media (max-width: 321px) {
     $item-size: 1.875rem;
     $container-size: 15rem;
+    $chess-size: 1rem;
 
     .container{
         width: $container-size;
         height:$container-size;
 
-        .item{
-            background-color: rgb(36, 36, 173);
+        .dark-block{
             width: $item-size;
             height: $item-size;
+            font-size: $chess-size;
         }
 
         .light-block{
-            background-color: rgb(201, 201, 250);
             width: $item-size;
             height: $item-size;
+            font-size: $chess-size;
         }
     }
 }

@@ -33,20 +33,24 @@
           justify-content: center;
   width: 30rem;
   height: 30rem;
-  -webkit-box-shadow: 0 0 5px;
-          box-shadow: 0 0 5px;
+  -webkit-box-shadow: 0 0 3px;
+          box-shadow: 0 0 3px;
 }
 
-.container .item {
+.container .dark-block {
   background-color: #2424ad;
   width: 3.75rem;
   height: 3.75rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .container .light-block {
   background-color: #c9c9fa;
   width: 3.75rem;
   height: 3.75rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 @media (max-width: 481px) {
@@ -54,15 +58,15 @@
     width: 20rem;
     height: 20rem;
   }
-  .container .item {
-    background-color: #2424ad;
+  .container .dark-block {
     width: 2.5rem;
     height: 2.5rem;
+    font-size: 1rem;
   }
   .container .light-block {
-    background-color: #c9c9fa;
     width: 2.5rem;
     height: 2.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -71,15 +75,15 @@
     width: 15rem;
     height: 15rem;
   }
-  .container .item {
-    background-color: #2424ad;
+  .container .dark-block {
     width: 1.875rem;
     height: 1.875rem;
+    font-size: 1rem;
   }
   .container .light-block {
-    background-color: #c9c9fa;
     width: 1.875rem;
     height: 1.875rem;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
