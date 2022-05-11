@@ -31,22 +31,55 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 32rem;
-  height: 32rem;
-  background-color: burlywood;
+  width: 30rem;
+  height: 30rem;
+  -webkit-box-shadow: 0 0 5px;
+          box-shadow: 0 0 5px;
 }
 
 .container .item {
-  background-color: green;
-  border: 1px solid white;
+  background-color: #2424ad;
   width: 3.75rem;
   height: 3.75rem;
 }
 
-.container .item2 {
-  background-color: #ac0303;
-  border: 1px solid white;
+.container .light-block {
+  background-color: #c9c9fa;
   width: 3.75rem;
   height: 3.75rem;
+}
+
+@media (max-width: 481px) {
+  .container {
+    width: 20rem;
+    height: 20rem;
+  }
+  .container .item {
+    background-color: #2424ad;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .container .light-block {
+    background-color: #c9c9fa;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 321px) {
+  .container {
+    width: 15rem;
+    height: 15rem;
+  }
+  .container .item {
+    background-color: #2424ad;
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+  .container .light-block {
+    background-color: #c9c9fa;
+    width: 1.875rem;
+    height: 1.875rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
