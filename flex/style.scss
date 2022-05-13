@@ -19,7 +19,10 @@ body {height: 100%;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background: url(./img/harry-potter.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .container{
@@ -39,6 +42,7 @@ body {height: 100%;
         height: $item-size;
         font-size: $chess-size;
         text-align: center;
+        
     }
 
     .light-block{
@@ -47,5 +51,6 @@ body {height: 100%;
         height: $item-size;
         font-size: $chess-size;
         text-align: center;
+        
     }
 }

@@ -6,7 +6,10 @@
 }
 
 body {
-  background-color: white;
+  background: url(./img/harry-potter.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .center {
@@ -34,10 +37,10 @@ body {
 }
 
 .center .container .dark-block {
-  background-color: gold;
+  background-color: #f5bd02;
 }
 
 .center .container .light-block {
-  background-color: #db0303;
+  background-color: #530103;
 }
 /*# sourceMappingURL=styles.css.map */

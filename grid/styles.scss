@@ -8,7 +8,10 @@ $chess-size:6vmin;
 }
 
 body {
-    background-color: white;
+    background: url(./img/harry-potter.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .center {
@@ -30,10 +33,10 @@ body {
         
 
         .dark-block{
-            background-color: gold;
+            background-color:  rgb(245, 189, 2);
         }
         .light-block{
-            background-color: rgb(219, 3, 3)
+            background-color: #530103;
         }
     }
 }
