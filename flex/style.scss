@@ -1,18 +1,23 @@
-$item-size: 3.75rem;
-$container-size: 30rem;
-$chess-size: 2rem;
+$item-size: 8.75vmin;
+$container-size: 70vmin;
+$chess-size: 6vmin;
+$border-size: 80vmin;
 
 * {
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+    // box-sizing: border-box;
+}
+
+body {height: 100%; 
+    overflow: hidden;
 }
 
 .parent{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: white;
 }
@@ -23,10 +28,8 @@ $chess-size: 2rem;
     align-content: center;
     justify-content: center;
     width: $container-size;
-    height:$container-size;
-    box-shadow: 0 0 3px;
-
-    
+    height:$container-size ;
+    border: 2vmin solid blue;
     
 
     .dark-block{
@@ -43,52 +46,5 @@ $chess-size: 2rem;
         height: $item-size;
         font-size: $chess-size;
         text-align: center;
-    }
-}
-
-
-@media (max-width: 481px) {
-    $item-size: 2.5rem;
-    $container-size: 20rem;
-    $chess-size: 1rem;
-
-    .container{
-        width: $container-size;
-        height:$container-size;
-
-        .dark-block{
-            width: $item-size;
-            height: $item-size;
-            font-size: $chess-size;
-        }
-
-        .light-block{
-            width: $item-size;
-            height: $item-size;
-            font-size: $chess-size;
-        }
-    }
-}
-
-@media (max-width: 321px) {
-    $item-size: 1.875rem;
-    $container-size: 15rem;
-    $chess-size: 1rem;
-
-    .container{
-        width: $container-size;
-        height:$container-size;
-
-        .dark-block{
-            width: $item-size;
-            height: $item-size;
-            font-size: $chess-size;
-        }
-
-        .light-block{
-            width: $item-size;
-            height: $item-size;
-            font-size: $chess-size;
-        }
     }
 }

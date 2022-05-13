@@ -1,0 +1,40 @@
+$container-size: 70vmin;
+$chess-size:6vmin;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.center {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    .container {
+        display: grid;
+        width: $container-size;
+        height: $container-size;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(8, 1fr);
+        place-content: center;
+        font-size: $chess-size;
+        text-align: center;
+        border: 2vmin solid brown;
+        
+
+        .dark-block{
+            background-color: burlywood;
+        }
+        .light-block{
+            background-color: rgb(177, 104, 10);
+        }
+    }
+}
+
