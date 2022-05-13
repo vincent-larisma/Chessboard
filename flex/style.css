@@ -36,11 +36,12 @@ body {
           justify-content: center;
   width: 70vmin;
   height: 70vmin;
-  border: 2vmin solid blue;
+  -webkit-box-shadow: 0 0 5px;
+          box-shadow: 0 0 5px;
 }
 
 .container .dark-block {
-  background-color: #2424ad;
+  background-color: #f5bd02;
   width: 8.75vmin;
   height: 8.75vmin;
   font-size: 6vmin;
@@ -48,7 +49,7 @@ body {
 }
 
 .container .light-block {
-  background-color: #c9c9fa;
+  background-color: #530103;
   width: 8.75vmin;
   height: 8.75vmin;
   font-size: 6vmin;
