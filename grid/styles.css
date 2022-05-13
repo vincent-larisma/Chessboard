@@ -29,14 +29,15 @@ body {
   place-content: center;
   font-size: 6vmin;
   text-align: center;
-  border: 2vmin solid brown;
+  -webkit-box-shadow: 0 0 5px;
+          box-shadow: 0 0 5px;
 }
 
 .center .container .dark-block {
-  background-color: burlywood;
+  background-color: gold;
 }
 
 .center .container .light-block {
-  background-color: #b1680a;
+  background-color: red;
 }
 /*# sourceMappingURL=styles.css.map */

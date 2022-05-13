@@ -26,14 +26,14 @@ body {
         place-content: center;
         font-size: $chess-size;
         text-align: center;
-        border: 2vmin solid brown;
+        box-shadow: 0 0 5px;
         
 
         .dark-block{
-            background-color: burlywood;
+            background-color: gold;
         }
         .light-block{
-            background-color: rgb(177, 104, 10);
+            background-color: red
         }
     }
 }
