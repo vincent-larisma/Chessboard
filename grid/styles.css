@@ -10,6 +10,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 
 .center {
@@ -42,5 +43,168 @@ body {
 
 .center .container .light-block {
   background-color: #530103;
+}
+
+.move1 {
+  position: relative;
+  -webkit-animation-name: frame1;
+          animation-name: frame1;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes frame1 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: -9vmin;
+  }
+}
+
+@keyframes frame1 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: -9vmin;
+  }
+}
+
+.move2 {
+  position: relative;
+  -webkit-animation-name: frame2;
+          animation-name: frame2;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes frame2 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 18vmin;
+  }
+}
+
+@keyframes frame2 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 18vmin;
+  }
+}
+
+.move3 {
+  position: relative;
+  -webkit-animation-name: frame3;
+          animation-name: frame3;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes frame3 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: -18vmin;
+  }
+}
+
+@keyframes frame3 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: -18vmin;
+  }
+}
+
+.move4 {
+  position: relative;
+  -webkit-animation-name: frame4;
+          animation-name: frame4;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes frame4 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 35vmin;
+    top: 35vmin;
+  }
+}
+
+@keyframes frame4 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 35vmin;
+    top: 35vmin;
+  }
+}
+
+.light {
+  -webkit-animation-name: frame5;
+          animation-name: frame5;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+@-webkit-keyframes frame5 {
+  0% {
+    background-color: #530103;
+  }
+  100% {
+    background-color: lime;
+  }
+}
+
+@keyframes frame5 {
+  0% {
+    background-color: #530103;
+  }
+  100% {
+    background-color: lime;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

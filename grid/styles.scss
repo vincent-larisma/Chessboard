@@ -1,5 +1,6 @@
 $container-size: 70vmin;
 $chess-size:6vmin;
+$color-scheme: rgb(0, 255, 0);
 
 * {
     margin: 0;
@@ -12,6 +13,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
+
 }
 
 .center {
@@ -40,4 +43,185 @@ body {
         }
     }
 }
+
+
+
+// Animation~
+
+.move1 {
+    position: relative;
+    animation-name: frame1;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes frame1 {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+    100% {
+      left: 0px;
+      top: -9vmin;
+    }
+  }
+
+  .move2 {
+    position: relative;
+    animation-name: frame2;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes frame2 {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+    100% {
+      left: 0px;
+      top: 18vmin;
+    }
+  }
+
+  .move3 {
+    position: relative;
+    animation-name: frame3;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes frame3 {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+    100% {
+      left: 0px;
+      top: -18vmin;
+    }
+  }
+
+  .move4 {
+    position: relative;
+    animation-name: frame4;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes frame4 {
+    0% {
+      left: 0px;
+      top: 0px;
+  
+    }
+    100% {
+    left: 35vmin;
+      top: 35vmin;
+    }
+  }
+  
+  .light {
+    animation-name: frame5;
+    animation-duration:10s;
+    animation-delay: 7s;
+
+  }
+  @keyframes frame5 {
+    0% {
+      background-color: #530103;
+  
+    }
+    100% {
+    background-color: $color-scheme;
+    }
+  }
+  // .light2 {
+  //   animation-name: frame6;
+  //   animation-duration:5s;
+  //   animation-delay: 7s;
+
+  // }
+  // @keyframes frame6 {
+  //   0% {
+  //     background-color: #530103;
+  
+  //   }
+  //   100% {
+  //   background-color: $color-scheme;
+  //   }
+  // }
+
+  // .light3 {
+  //   animation-name: frame7;
+  //   animation-duration:5s;
+  //   animation-delay: 7s;
+
+  // }
+  // @keyframes frame7 {
+  //   0% {
+  //     background-color: #530103;
+  
+  //   }
+  //   100% {
+  //   background-color: $color-scheme;
+  //   }
+  // }
+  // .light4 {
+  //   animation-name: frame8;
+  //   animation-duration:5s;
+  //   animation-delay: 7s;
+
+  // }
+  // @keyframes frame8 {
+  //   0% {
+  //     background-color: #530103;
+  
+  //   }
+  //   100% {
+  //   background-color: $color-scheme;
+  //   }
+  // }
+
+  // .wrapper {
+  //   /*This part is important for centering*/
+  //   display: grid;
+  //   place-items: center;
+  // }
+  
+  // .checkmate {
+  //   width: 10ch;
+  //   animation: typing 2s steps(10), blink .5s step-end infinite alternate;
+  //   white-space: nowrap;
+  //   overflow: hidden;
+  //   border-right: .5vmin solid;
+  //   font-family: monospace;
+  //   color: white;
+  //   font-size: 2em;
+  //   margin: auto;
+  //   position: relative;
+  //   top: 50vmin;
+  //   bottom: 50vmin; 
+  //   color: #FFF;
+  //   z-index:5;
+  //   font-size: 5vmin;
+  //   animation-delay: 10s;
+    
+  // }
+  
+  // @keyframes typing {
+  //   from {
+  //     width: 0;
+  //     display: hidden;
+  //   }
+  // }
+      
+  // @keyframes blink {
+  //   50% {
+  //     border-color: transparent
+  //   }
+  // }
 
