@@ -126,65 +126,21 @@ body {
   
   .light {
     animation-name: frame5;
-    animation-duration:10s;
-    animation-delay: 7s;
+    animation-duration:30s;
+    animation-delay: 9s;
 
   }
   @keyframes frame5 {
     0% {
       background-color: #530103;
-  
     }
+    1% {
+      background-color: $color-scheme;
+      }
     100% {
     background-color: $color-scheme;
     }
   }
-  // .light2 {
-  //   animation-name: frame6;
-  //   animation-duration:5s;
-  //   animation-delay: 7s;
-
-  // }
-  // @keyframes frame6 {
-  //   0% {
-  //     background-color: #530103;
-  
-  //   }
-  //   100% {
-  //   background-color: $color-scheme;
-  //   }
-  // }
-
-  // .light3 {
-  //   animation-name: frame7;
-  //   animation-duration:5s;
-  //   animation-delay: 7s;
-
-  // }
-  // @keyframes frame7 {
-  //   0% {
-  //     background-color: #530103;
-  
-  //   }
-  //   100% {
-  //   background-color: $color-scheme;
-  //   }
-  // }
-  // .light4 {
-  //   animation-name: frame8;
-  //   animation-duration:5s;
-  //   animation-delay: 7s;
-
-  // }
-  // @keyframes frame8 {
-  //   0% {
-  //     background-color: #530103;
-  
-  //   }
-  //   100% {
-  //   background-color: $color-scheme;
-  //   }
-  // }
 
   // .wrapper {
   //   /*This part is important for centering*/
