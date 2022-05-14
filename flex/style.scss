@@ -1,7 +1,4 @@
-$item-size: 8.75vmin;
-$container-size: 70vmin;
-$chess-size: 6vmin;
-$border-size: 80vmin;
+@import "./partials/mixins", "./partials/variables";
 
 * {
     padding: 0px;
@@ -28,29 +25,20 @@ body {height: 100%;
 .container{
     flex-wrap: wrap;
     display: flex;
-    align-content: center;
-    justify-content: center;
     width: $container-size;
     height:$container-size ;
-    // border: 2vmin solid brown;
     box-shadow: 0 0 5px;
     
 
     .dark-block{
         background-color:  rgb(245, 189, 2);
-        width: $item-size;
-        height: $item-size;
-        font-size: $chess-size;
-        text-align: center;
+        @include block();
         
     }
 
     .light-block{
         background-color: #530103;
-        width: $item-size;
-        height: $item-size;
-        font-size: $chess-size;
-        text-align: center;
+        @include block();
         
     }
 }

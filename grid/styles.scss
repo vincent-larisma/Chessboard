@@ -1,6 +1,4 @@
-$container-size: 70vmin;
-$chess-size:6vmin;
-$color-scheme: rgb(0, 255, 0);
+@import "./partials/mixins", "./partials/variables";
 
 * {
     margin: 0;
@@ -47,13 +45,8 @@ body {
 
 
 // Animation~
-
 .move1 {
-    position: relative;
-    animation-name: frame1;
-    animation-delay: 1s;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+  @include movement(1s,2s ,frame1 )
   }
   
   @keyframes frame1 {
@@ -68,11 +61,7 @@ body {
   }
 
   .move2 {
-    position: relative;
-    animation-name: frame2;
-    animation-duration: 2s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
+    @include movement(3s,2s ,frame2 )
   }
   
   @keyframes frame2 {
@@ -87,11 +76,7 @@ body {
   }
 
   .move3 {
-    position: relative;
-    animation-name: frame3;
-    animation-duration: 2s;
-    animation-delay: 5s;
-    animation-fill-mode: forwards;
+    @include movement(5s,2s ,frame3 )
   }
   
   @keyframes frame3 {
@@ -106,11 +91,7 @@ body {
   }
 
   .move4 {
-    position: relative;
-    animation-name: frame4;
-    animation-duration: 3s;
-    animation-delay: 6s;
-    animation-fill-mode: forwards;
+    @include movement(6s,3s ,frame4 )
   }
   @keyframes frame4 {
     0% {
@@ -125,9 +106,7 @@ body {
   }
   
   .light {
-    animation-name: frame5;
-    animation-duration:30s;
-    animation-delay: 9s;
+    @include light-green(9s,30s,frame5)
 
   }
   @keyframes frame5 {

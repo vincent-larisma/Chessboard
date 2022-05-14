@@ -1,0 +1,13 @@
+@mixin movement($delay, $duration, $frame) {
+    position: relative;
+      animation-name: $frame;
+      animation-delay: $delay;
+      animation-duration: $duration;
+      animation-fill-mode: forwards;
+  }
+  
+  @mixin light-green($delay, $duration, $frame) {
+      animation-name: $frame;
+      animation-delay: $delay;
+      animation-duration: $duration;
+  }
