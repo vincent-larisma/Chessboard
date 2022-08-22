@@ -1,4 +1,4 @@
-# Chessboard - [project 3 and 4 in Avion school (bootcamp)] 
+# Chessboard - (project 3 and 4 in Avion school [bootcamp])
 >**This project intends to develop the CSS skill of the user in regards to using animation, flexbox, and grid.**
 
 ## What the user learned
